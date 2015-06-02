@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1881FC9F1B11D1A50051B95B /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1881FC871B11D1A50051B95B /* libLeap.dylib */; };
-		1881FCA01B11D1A50051B95B /* Leap.lib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1881FC8A1B11D1A50051B95B /* Leap.lib */; };
-		1881FCA11B11D1A50051B95B /* Leapd.lib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1881FC8C1B11D1A50051B95B /* Leapd.lib */; };
 		1881FCA31B11D1A50051B95B /* ofxLeapMotion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1881FC961B11D1A50051B95B /* ofxLeapMotion.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
@@ -65,17 +63,7 @@
 /* Begin PBXFileReference section */
 		1881FC7F1B11D1A50051B95B /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leap.h; sourceTree = "<group>"; };
 		1881FC801B11D1A50051B95B /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapMath.h; sourceTree = "<group>"; };
-		1881FC831B11D1A50051B95B /* libLeap.so */ = {isa = PBXFileReference; lastKnownFileType = file; path = libLeap.so; sourceTree = "<group>"; };
-		1881FC851B11D1A50051B95B /* libLeap.so */ = {isa = PBXFileReference; lastKnownFileType = file; path = libLeap.so; sourceTree = "<group>"; };
 		1881FC871B11D1A50051B95B /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libLeap.dylib; sourceTree = "<group>"; };
-		1881FC891B11D1A50051B95B /* Leap.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = Leap.dll; sourceTree = "<group>"; };
-		1881FC8A1B11D1A50051B95B /* Leap.lib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = Leap.lib; sourceTree = "<group>"; };
-		1881FC8B1B11D1A50051B95B /* Leapd.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = Leapd.dll; sourceTree = "<group>"; };
-		1881FC8C1B11D1A50051B95B /* Leapd.lib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = Leapd.lib; sourceTree = "<group>"; };
-		1881FC8D1B11D1A50051B95B /* msvcp120.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = msvcp120.dll; sourceTree = "<group>"; };
-		1881FC8E1B11D1A50051B95B /* msvcp120d.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = msvcp120d.dll; sourceTree = "<group>"; };
-		1881FC8F1B11D1A50051B95B /* msvcr120.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = msvcr120.dll; sourceTree = "<group>"; };
-		1881FC901B11D1A50051B95B /* msvcr120d.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = msvcr120d.dll; sourceTree = "<group>"; };
 		1881FC911B11D1A50051B95B /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		1881FC921B11D1A50051B95B /* version.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = version.txt; sourceTree = "<group>"; };
 		1881FC961B11D1A50051B95B /* ofxLeapMotion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxLeapMotion.cpp; sourceTree = "<group>"; };
@@ -117,12 +105,10 @@
 				E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */,
 				E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */,
 				1881FC9F1B11D1A50051B95B /* libLeap.dylib in Frameworks */,
-				1881FCA01B11D1A50051B95B /* Leap.lib in Frameworks */,
 				E45BE97D0E8CC7DD009D7055 /* AudioToolbox.framework in Frameworks */,
 				E45BE97F0E8CC7DD009D7055 /* CoreAudio.framework in Frameworks */,
 				E45BE9800E8CC7DD009D7055 /* CoreFoundation.framework in Frameworks */,
 				E45BE9810E8CC7DD009D7055 /* CoreServices.framework in Frameworks */,
-				1881FCA11B11D1A50051B95B /* Leapd.lib in Frameworks */,
 				E45BE9830E8CC7DD009D7055 /* OpenGL.framework in Frameworks */,
 				E45BE9840E8CC7DD009D7055 /* QuickTime.framework in Frameworks */,
 				E4C2424710CC5A17004149E2 /* AppKit.framework in Frameworks */,
@@ -168,28 +154,9 @@
 		1881FC811B11D1A50051B95B /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				1881FC821B11D1A50051B95B /* linux */,
-				1881FC841B11D1A50051B95B /* linux64 */,
 				1881FC861B11D1A50051B95B /* osx */,
-				1881FC881B11D1A50051B95B /* winvs */,
 			);
 			path = lib;
-			sourceTree = "<group>";
-		};
-		1881FC821B11D1A50051B95B /* linux */ = {
-			isa = PBXGroup;
-			children = (
-				1881FC831B11D1A50051B95B /* libLeap.so */,
-			);
-			path = linux;
-			sourceTree = "<group>";
-		};
-		1881FC841B11D1A50051B95B /* linux64 */ = {
-			isa = PBXGroup;
-			children = (
-				1881FC851B11D1A50051B95B /* libLeap.so */,
-			);
-			path = linux64;
 			sourceTree = "<group>";
 		};
 		1881FC861B11D1A50051B95B /* osx */ = {
@@ -198,21 +165,6 @@
 				1881FC871B11D1A50051B95B /* libLeap.dylib */,
 			);
 			path = osx;
-			sourceTree = "<group>";
-		};
-		1881FC881B11D1A50051B95B /* winvs */ = {
-			isa = PBXGroup;
-			children = (
-				1881FC891B11D1A50051B95B /* Leap.dll */,
-				1881FC8A1B11D1A50051B95B /* Leap.lib */,
-				1881FC8B1B11D1A50051B95B /* Leapd.dll */,
-				1881FC8C1B11D1A50051B95B /* Leapd.lib */,
-				1881FC8D1B11D1A50051B95B /* msvcp120.dll */,
-				1881FC8E1B11D1A50051B95B /* msvcp120d.dll */,
-				1881FC8F1B11D1A50051B95B /* msvcr120.dll */,
-				1881FC901B11D1A50051B95B /* msvcr120d.dll */,
-			);
-			path = winvs;
 			sourceTree = "<group>";
 		};
 		1881FC951B11D1A50051B95B /* src */ = {
@@ -563,8 +515,8 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_50)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_52)",
-					/Users/tado/Documents/of_v0.8.4_osx_release/addons/ofxLeapMotion/libs/lib/osx,
-					/Users/tado/Documents/of_v0.8.4_osx_release/addons/ofxLeapMotion/libs/lib/winvs,
+					../../../addons/ofxLeapMotion/libs/lib/osx,
+					../../../addons/ofxLeapMotion/libs/lib/winvs,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)Debug";
 				WRAPPER_EXTENSION = app;
@@ -650,8 +602,8 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_49)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_50)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
-					/Users/tado/Documents/of_v0.8.4_osx_release/addons/ofxLeapMotion/libs/lib/osx,
-					/Users/tado/Documents/of_v0.8.4_osx_release/addons/ofxLeapMotion/libs/lib/winvs,
+					../../../addons/ofxLeapMotion/libs/lib/osx,
+					../../../addons/ofxLeapMotion/libs/lib/winvs,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

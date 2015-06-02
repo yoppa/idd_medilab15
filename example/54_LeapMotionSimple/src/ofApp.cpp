@@ -19,7 +19,7 @@ void ofApp::setup(){
 void ofApp::update(){
     // 検出された手の数だけ、ofxLeapMotionSimpleHandのvector配列に追加
     simpleHands = leap.getSimpleHands();
-    
+
     // フレーム更新して、手が検出されたら
     if( leap.isFrameNew() && simpleHands.size() ){
         // 画面の大きさにあわせて、スケールをマッピング
@@ -27,7 +27,7 @@ void ofApp::update(){
         leap.setMappingY(90, 490, -ofGetHeight()/2, ofGetHeight()/2);
         leap.setMappingZ(-150, 150, -200, 200);
     }
-    
+
     // ofxLeapMotionに現在のフレームは古くなったことを通知
     leap.markFrameAsOld();
 }
